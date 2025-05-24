@@ -348,9 +348,3 @@ npm run dev      # Start development server with nodemon
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- System design inspired by "Designing Data-Intensive Applications"
-- Base62 encoding algorithm
-- Express.js and Node.js communities
