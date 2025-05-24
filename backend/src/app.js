@@ -72,13 +72,6 @@ app.get('/health', (req, res) => {
 // API routes
 app.use('/api/v1', urlRoutes);
 
-// Handle 404 for API routes
-app.use('/api/*', (req, res) => {
-  res.status(404).json({
-    error: 'API endpoint not found',
-    path: req.originalUrl
-  });
-});
 
 // Global error handler
 app.use((err, req, res, next) => {
