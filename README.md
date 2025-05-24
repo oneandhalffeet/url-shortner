@@ -4,9 +4,10 @@ A robust and scalable URL shortening service backend built with Node.js, Express
 
 ## 🚀 Features
 
+- **Modern UI/UX**: Clean, responsive design with smooth animations
 - **URL Shortening**: Convert long URLs to short, shareable links using Base62 encoding
 - **URL Redirection**: Fast redirection to original URLs with click tracking
-- **Analytics**: Track click counts and URL statistics
+- **Analytics Dashboard**: Detailed insights and click tracking
 - **Rate Limiting**: Prevent abuse with configurable rate limits
 - **Security**: Helmet for security headers, CORS protection
 - **Database**: PostgreSQL with connection pooling via Neon
@@ -42,6 +43,31 @@ backend/
 ├── .env                    # Environment variables
 ├── package.json            # Dependencies
 └── README.md              # This file
+```
+
+```
+frontend/
+├── public/
+│   ├── index.html          # HTML template
+│   ├── favicon.ico         # App favicon
+│   └── manifest.json       # PWA manifest
+├── src/
+│   ├── components/         # Reusable components
+│   │   ├── UrlShortener.js # URL shortening form
+│   │   └── UrlList.js      # URL list with pagination
+│   ├── pages/             # Page components
+│   │   ├── Home.js        # Home page
+│   │   └── Analytics.js   # Analytics page
+│   ├── services/          # API services
+│   │   └── api.js         # Backend API integration
+│   ├── utils/             # Utility functions
+│   │   └── validation.js  # Form validation helpers
+│   ├── App.js             # Main app component
+│   ├── App.css            # Global styles
+│   ├── index.js           # App entry point
+│   └── index.css          # Base CSS styles
+├── package.json           # Dependencies and scripts
+└── .env.example          # Environment variables template
 ```
 
 ## 🛠️ Tech Stack
